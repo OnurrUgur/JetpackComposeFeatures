@@ -96,7 +96,10 @@ fun SecondPage(onCloseClick: () -> Unit) {
                 .fillMaxWidth()
                 .padding(all = 32.dp)
                 .background(color = Color.White)
-                .clickable { }
+                .clickable(
+                    indication = null,
+                    interactionSource = remember { MutableInteractionSource() }
+                ) { }
 
         ) {
 
