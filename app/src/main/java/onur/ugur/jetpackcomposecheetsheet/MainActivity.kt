@@ -28,6 +28,7 @@ import onur.ugur.jetpackcomposecheetsheet.onLongPress.onLongPress
 import onur.ugur.jetpackcomposecheetsheet.onLongPress.onLongPressText
 import onur.ugur.jetpackcomposecheetsheet.ui.theme.DottedShape
 import onur.ugur.jetpackcomposecheetsheet.ui.theme.JetpackComposeCheetSheetTheme
+import onur.ugur.jetpackcomposecheetsheet.zIndex.ZIndexFeature
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +39,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = Color.White
                 ) {
-
+                    ZIndexFeature()
                 }
 
         }
